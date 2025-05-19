@@ -1,6 +1,6 @@
 # PoC Recortar Imagem
 
-# Flutter Image Cropper Screen
+# Recortar Imagem
 
 Este projeto é um exemplo básico de como utilizar a biblioteca [`crop_your_image`](https://pub.dev/packages/crop_your_image) no Flutter para recortar imagens de forma interativa.
 
