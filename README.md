@@ -27,6 +27,7 @@ A biblioteca `crop_your_image` permite criar uma área de recorte com controles 
 ---
 
 ![alt text](https://github.com/andersonmatte/poc_cortar_imagem/blob/master/assets/prints/printtela.png)
+![alt text](https://github.com/andersonmatte/poc_cortar_imagem/blob/master/assets/prints/print.png)
 
 ## Como usar
 
