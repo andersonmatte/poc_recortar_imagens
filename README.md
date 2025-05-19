@@ -1,16 +1,37 @@
-# poc_recortar_imagens
+# PoC Recortar Imagem
 
-PoC recortar imagens
+# Flutter Image Cropper Screen
 
-## Getting Started
+Este projeto é um exemplo básico de como utilizar a biblioteca [`crop_your_image`](https://pub.dev/packages/crop_your_image) no Flutter para recortar imagens de forma interativa.
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## Funcionalidade
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+A biblioteca `crop_your_image` permite criar uma área de recorte com controles intuitivos, possibilitando ao usuário:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Selecionar e exibir uma imagem local.
+- Ajustar e recortar uma área da imagem.
+- Visualizar o resultado recortado.
+- Suporte a feedback visual e manipulação via `CropController`.
+
+---
+
+## Tela de Recorte
+
+- A imagem original é exibida com moldura de recorte ajustável.
+- Um botão **Recortar** inicia o processo.
+- Ao finalizar, a imagem recortada é exibida.
+- Layout limpo, responsivo e com cores no padrão laranja do projeto.
+
+---
+
+![alt text](https://github.com/andersonmatte/poc_cortar_imagem/blob/master/assets/prints/print.png)
+
+## Como usar
+
+1. Adicione a dependência no seu `pubspec.yaml`:
+
+```yaml
+dependencies:
+  crop_your_image: ^2.0.0
