@@ -9,7 +9,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Text('PoC Cortar Imagem', style: TextStyle(color: Colors.white)),
+        title: Text('PoC Recortar Imagem', style: TextStyle(color: Colors.white)),
         backgroundColor: Colors.deepOrangeAccent,
       ),
       body: Center(
@@ -21,7 +21,7 @@ class HomeScreen extends StatelessWidget {
             );
           },
           icon: Icon(CupertinoIcons.scissors),
-          label: Text('Cortar Imagem'),
+          label: Text('Recortar Imagem'),
           style: ElevatedButton.styleFrom(side: BorderSide(color: Colors.deepOrangeAccent, style: BorderStyle.solid),
             backgroundColor: Colors.white,
             foregroundColor: Colors.deepOrangeAccent,

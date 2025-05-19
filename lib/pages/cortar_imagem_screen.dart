@@ -28,7 +28,7 @@ class _CortarImagemScreenState extends State<CortarImagemScreen> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Text('Cortar Imagem', style: TextStyle(color: Colors.white)),
+        title: Text('Recortar Imagem', style: TextStyle(color: Colors.white)),
         backgroundColor: Colors.deepOrangeAccent,
       ),
       body:
