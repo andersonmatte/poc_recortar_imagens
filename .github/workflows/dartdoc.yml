@@ -19,7 +19,7 @@ jobs:
       - name: Instalar Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.10.5' # IMPORTANTE! Colocar a mesma versão do seu projeto ou que esteja dentro do seu range de versões!
+          flutter-version: '3.32.2' # IMPORTANTE! Colocar a mesma versão do seu projeto conforme flutter --version!
 
       - name: Pub Get
         run: flutter pub get
