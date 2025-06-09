@@ -1,0 +1,38 @@
+name: Deploy Flutter Doc to GitHub Pages
+
+on:
+  push:
+    branches:
+      - feature/dart-doc  # 'feature/dart-doc' branch onde tem os código com comentários
+
+permissions:
+  contents: write  # Permissão necessária para publicar no branch gh-pages
+
+jobs:
+  generate-and-deploy-doc:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v4
+
+      - name: Instalar Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '^3.7.2'  # IMPORTANTE! Colocar a mesma versão do seu projeto!
+
+      - name: Pub Get
+        run: flutter pub get
+
+      - name: Ativar dartdoc
+        run: flutter pub global activate dartdoc
+
+      - name: Gerar documentação
+        run: flutter pub global run dartdoc
+
+      - name: Publicar no GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./doc/api
+          publish_branch: gh-pages
