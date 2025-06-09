@@ -1,17 +1,23 @@
 import 'package:flutter/material.dart';
-
 import 'home_screen.dart';
 
+/// Tela inicial do aplicativo exibida ao iniciar.
+///
+/// A [SplashScreen] mostra uma imagem por 3 segundos antes de
+/// redirecionar automaticamente o usuário para a [HomeScreen].
 class SplashScreen extends StatefulWidget {
   @override
   _SplashScreenState createState() => _SplashScreenState();
 }
 
+/// Estado da [SplashScreen].
+///
+/// Gerencia o temporizador de 3 segundos e navega para a [HomeScreen].
 class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    // Delay para exibir a imagem do Gonzo!
+    // Atraso de 3 segundos antes de redirecionar para a tela principal.
     Future.delayed(Duration(seconds: 3), () {
       Navigator.pushReplacement(
         context,
